@@ -1,7 +1,7 @@
 pipeline{
     agent{ label 'JDK11'}
     options{ 
-        (time: 1, unit: 'HOURS'),
+        timeout(time: 1, unit: 'HOURS')
         retry(2)
          }
     triggers {
